@@ -177,3 +177,10 @@ p{
     margin: 5px;
     font-size: 14px;
 }
+textarea {
+    resize: none;
+}
+.contact-btn{
+    background-image: linear-gradient(90deg, #fc46b8, #81c1e8);
+    border: none;
+}
