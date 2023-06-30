@@ -1,8 +1,8 @@
 :root {
     --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     --heading-font: 'Lobster Two', cursive;
-
-    --text-black: #000
+    --text-black: #000;
+    --text-white: #fff
 }
 
 body {
@@ -76,13 +76,18 @@ p{
     position: relative;
 
 }
-
-.about-photo img {
-    transform: rotateY(7deg);
+.photo img{
     box-shadow: var(--box-shadow);
-    filter: grayscale(1);
+    /*filter: grayscale(1);*/
+}
+.photo-rotate-right{
+    transform: rotateY(7deg);
 }
 
+.photo-rotate-left{
+    transform: rotateY(-7deg);
+
+}
 .info h2{
     color: var(--text-black);
     margin-top: 40px;
@@ -137,6 +142,9 @@ p{
     right: 0;
     transform: translateX(50%);
 }
+.work-item{
+    margin-top: 60px;
+}
 .footer{
     margin: 80px auto 10px;
 }
@@ -156,4 +164,16 @@ p{
     to{
         width: 100%;
     }
+}
+.work-skills{
+    margin-top: 20px;
+}
+.work-skill-item{
+    background: #928A97;
+    padding: 5px 10px;
+    /*box-shadow: var(--box-shadow);*/
+    border-radius: 5px;
+    color: var(--text-white);
+    margin: 5px;
+    font-size: 14px;
 }
